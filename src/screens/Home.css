@@ -1,0 +1,13 @@
+/* Home.css or your existing CSS file */
+
+.button-container {
+    display: flex; /* Use flexbox to center the button */
+    justify-content: center; /* Center horizontally */
+    text-decoration: none;
+    margin: 20px 0; /* Add some space above and below */
+}
+
+.button-container .btn {
+    text-align: center; /* Center text inside the button */
+    padding: 12px 20px; /* Optional: Adjust padding for better button size */
+}

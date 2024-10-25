@@ -1,0 +1,103 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar logo and title container */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Website logo */
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.logo-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar title with reduced font size */
+.navbar-title {
+    color: #FFD700;
+    font-size: 32px; /* Reduced font size */
+}
+
+/* Navbar links */
+.navbar-links {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-link {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* Hover underline animation for links */
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+}
+
+.navbar-link:hover {
+    color: #FFD700;
+}
+
+/* Navbar buttons */
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* Auth buttons */
+.auth-btn {
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.auth-btn:hover {
+    background-color: #FFC107;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.logout-btn {
+    background-color: #DC3545;
+    color: #fff;
+}
+
+.logout-btn:hover {
+    background-color: #C82333;
+}

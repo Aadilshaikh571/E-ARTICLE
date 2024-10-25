@@ -1,0 +1,142 @@
+/* Container Styling */
+.article-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    background: #f9f9f9;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Article Detail Layout */
+.article-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    transition: transform 0.4s ease;
+}
+
+.article-detail:hover {
+    transform: scale(1.02);
+}
+
+/* Image Styling */
+.article-image {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.article-image:hover {
+    transform: scale(1.05);
+}
+
+/* Content Styling */
+.article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.article-heading:hover {
+    color: #007bff;
+}
+
+.article-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.article-author {
+    font-size: 1rem;
+    color: #888;
+    font-weight: bold;
+}
+
+/* Loading and Error Messages */
+.loading,
+.error-message {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+/* Buttons */
+/* Simple button styles */
+.edit-btn, .delete-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Edit button */
+.edit-btn {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active state to reset the lift effect on click */
+.edit-btn:active, .delete-btn:active {
+    transform: translateY(0);
+    transition: transform 0.1s ease;
+}
+
+
+/* Loading and error messages */
+.loading, .error-message {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
